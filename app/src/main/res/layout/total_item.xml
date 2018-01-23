@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/locate"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/locateHint"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/x40"
+        android:layout_marginLeft="@dimen/x10"
+        android:gravity="center_vertical"
+        android:text="全部城市"
+        android:textColor="#000000"
+        android:textSize="@dimen/x16" />
+
+</RelativeLayout>

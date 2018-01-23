@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/x200"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog_hint"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialog_customer_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x19"
+            android:layout_marginTop="@dimen/x19"
+            android:layout_marginLeft="@dimen/x19"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x16" />
+
+    </LinearLayout>
+
+</LinearLayout>

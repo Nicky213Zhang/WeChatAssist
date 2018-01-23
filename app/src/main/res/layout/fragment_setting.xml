@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#F0EFF4"
+              android:orientation="vertical">
+
+    <vicmob.micropowder.ui.views.CustomerScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/scrollViewLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/x8"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/title_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x8"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginTop="@dimen/x26"
+                android:textSize="@dimen/x20"
+                android:textColor="@color/vision_text"
+                android:text="版本"/>
+
+            <View style="@style/top_line"/>
+            <LinearLayout
+                style="@style/wrap_layout"
+                android:layout_marginTop="@dimen/x_1">
+                <!-- 上圆角 -->
+
+                <LinearLayout
+                    android:id="@+id/layout1"
+                    style="@style/mid_layout">
+                    <ImageView
+                        android:layout_width="@dimen/x30"
+                        android:layout_height="@dimen/x30"
+                        android:src="@mipmap/seting_01"/>
+
+                    <TextView
+                        style="@style/usertext"
+                        android:layout_marginLeft="@dimen/x13"
+                        android:text="版本更新"/>
+
+                    <ImageView style="@style/img_arrow"/>
+                </LinearLayout>
+                <!-- 分割线 -->
+                <View style="@style/bg_line"/>
+
+                <LinearLayout
+                    android:id="@+id/layout2"
+                    style="@style/mid_layout">
+
+                    <ImageView
+                        android:layout_width="@dimen/x30"
+                        android:layout_height="@dimen/x30"
+                        android:src="@mipmap/seting_02"/>
+
+                    <TextView
+                        style="@style/usertext"
+                        android:layout_marginLeft="@dimen/x13"
+                        android:text="关于版本"/>
+
+                    <ImageView style="@style/img_arrow"/>
+                </LinearLayout>
+                <View style="@style/bg_line"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                style="@style/title_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x8"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginTop="@dimen/x26"
+                android:textSize="@dimen/x20"
+                android:textColor="@color/vision_text"
+                android:text="公司"
+            />
+            <View style="@style/top_line"/>
+            <LinearLayout
+                style="@style/wrap_layout"
+                android:layout_marginTop="@dimen/x_1">
+                <!-- 上圆角 -->
+                <LinearLayout
+                    android:id="@+id/layout3"
+                    style="@style/mid_layout">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/x30"
+                        android:layout_height="@dimen/x30"
+                        android:src="@mipmap/seting_03"/>
+
+                    <TextView
+                        style="@style/usertext"
+                        android:layout_marginLeft="@dimen/x13"
+                        android:text="公司相关"/>
+
+                    <ImageView style="@style/img_arrow"/>
+                </LinearLayout>
+                <!-- 分割线 -->
+                <View style="@style/bg_line"/>
+
+                <LinearLayout
+                    android:id="@+id/layout4"
+                    style="@style/mid_layout">
+
+                    <ImageView
+                        android:layout_width="@dimen/x30"
+                        android:layout_height="@dimen/x30"
+                        android:src="@mipmap/seting_04"/>
+
+                    <TextView
+                        style="@style/usertext"
+                        android:layout_marginLeft="@dimen/x13"
+                        android:text="联系我们"/>
+
+                    <ImageView style="@style/img_arrow"/>
+                </LinearLayout>
+                <View style="@style/bg_line"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </vicmob.micropowder.ui.views.CustomerScrollView>
+
+</LinearLayout>

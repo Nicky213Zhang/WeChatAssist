@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/6.5.22Earn.iml" filepath="$PROJECT_DIR$/6.5.22Earn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/citypicker/citypicker.iml" filepath="$PROJECT_DIR$/citypicker/citypicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library-slidingmenu/library-slidingmenu.iml" filepath="$PROJECT_DIR$/library-slidingmenu/library-slidingmenu.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/vicmob_bg">
+
+    <RelativeLayout
+        android:id="@+id/version_texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x60"
+        android:background="@color/deep_orange">
+
+        <ImageView
+            android:id="@+id/aboutVicmob_back"
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x30"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x5"
+            android:background="@drawable/back_btn"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="微炫客"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/x18"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/id_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/version_texttitle"
+        android:divider="#ffff0000"
+        android:dividerHeight="@dimen/x10"
+        android:scrollbars="vertical"/>
+
+
+    <TextView
+        android:id="@+id/version_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text=""
+        android:textSize="@dimen/x14"/>
+
+</RelativeLayout>

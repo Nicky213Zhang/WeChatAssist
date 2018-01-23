@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/wl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x60"
+        android:layout_centerHorizontal="true"
+        android:background="@color/deep_orange">
+
+
+        <ImageView
+            android:id="@+id/wl_back"
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x30"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x5"
+            android:background="@drawable/back_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="白名单"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x19" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/wl_open"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wl_title"
+        android:layout_marginTop="@dimen/x30"
+        android:background="@drawable/open_back_ground"
+        android:orientation="horizontal"
+        android:padding="@dimen/x15">
+
+        <RelativeLayout
+            android:id="@+id/wl_local"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+           >
+
+            <ImageView
+                android:id="@+id/wl_img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x5"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/roll_01" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wl_img1"
+                android:layout_centerHorizontal="true"
+                android:text="本地文件"
+                android:textSize="@dimen/x16" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/wl_address_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/wl_img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x5"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/roll_02" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wl_img2"
+                android:layout_centerHorizontal="true"
+
+                android:text="导入通讯录"
+
+                android:textSize="@dimen/x16" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/wl_white_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/wl_img3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x5"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/roll_03" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wl_img3"
+                android:layout_centerHorizontal="true"
+
+                android:text="添加白名单"
+
+                android:textSize="@dimen/x16" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/wl_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/wl_img4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x5"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/roll_04" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wl_img4"
+                android:layout_centerHorizontal="true"
+                android:text="清空缓存"
+                android:textSize="@dimen/x16" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/wl_num_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wl_open"
+        android:layout_marginTop="@dimen/x30"
+        android:background="@drawable/open_back_ground">
+
+        <RelativeLayout
+            android:id="@+id/wl_number"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x60"
+            android:layout_marginTop="@dimen/x40"
+            android:layout_marginLeft="@dimen/x25"
+            android:layout_marginRight="@dimen/x25"
+            android:background="@color/back_ground">
+            <ImageView
+                android:id="@+id/wl_num_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x30"
+                android:src="@mipmap/roll_05"/>
+        <EditText
+            android:id="@+id/wl_num_ed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:maxLines="1"
+            android:minLines="1"
+            android:imeOptions="actionGo"
+            android:layout_toRightOf="@+id/wl_num_img"
+            android:layout_marginLeft="@dimen/x15"
+            android:layout_marginRight="@dimen/x15"
+            android:hint="手机号/微信号/QQ号"/>
+        </RelativeLayout>
+        <Button
+            android:id="@+id/wl_begin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wl_number"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/x45"
+            android:layout_marginRight="@dimen/x45"
+            android:layout_marginTop="@dimen/x40"
+            android:layout_marginBottom="@dimen/x40"
+            android:background="@drawable/begin_button"
+            android:text="添加号码"
+            android:textColor="#fff"
+            android:textSize="@dimen/x18" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/wl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wl_num_total" />
+
+</RelativeLayout>

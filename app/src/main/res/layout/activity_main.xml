@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <vicmob.micropowder.ui.views.NoScrollViewPager
+        android:id="@+id/vp_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </vicmob.micropowder.ui.views.NoScrollViewPager>
+
+    <LinearLayout
+        android:id="@+id/rg_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x52"
+        android:background="@color/deep_orange"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_home"
+                style="@style/tab_rb_style"
+                android:src="@drawable/mainbtn1"/>
+
+            <TextView
+                android:id="@+id/tv_home"
+                style="@style/tab_text_style"
+                android:layout_below="@+id/iv_home"
+                android:text="首页"
+                android:textColor="@color/main_tab_color"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_address"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_address"
+                style="@style/tab_rb_style"
+                android:src="@drawable/addressbtn"/>
+
+            <TextView
+                android:id="@+id/tv_address"
+                style="@style/tab_text_style"
+                android:layout_below="@+id/iv_address"
+                android:text="地图"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_setting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_setting"
+                style="@style/tab_rb_style"
+                android:src="@drawable/settingbtn"/>
+
+            <TextView
+                android:id="@+id/tv_setting"
+                style="@style/tab_text_style"
+                android:layout_below="@+id/iv_setting"
+                android:text="设置"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

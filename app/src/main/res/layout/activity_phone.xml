@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x60"
+        android:layout_centerHorizontal="true"
+        android:background="@color/deep_orange">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x30"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x5"
+            android:background="@drawable/back_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="通讯录"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/x18" />
+    </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/communication"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_title"
+                android:layout_marginTop="@dimen/x10"
+                android:background="@drawable/open_back_ground"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/iv_icon"
+                    android:layout_width="@dimen/x32"
+                    android:layout_height="@dimen/x26"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:src="@mipmap/carrieroperator" />
+
+                <TextView
+                    android:id="@+id/tv_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_toRightOf="@+id/iv_icon"
+                    android:text="运营商:"
+                    android:textColor="@color/content_color"
+                    android:textSize="@dimen/x20" />
+
+                <RadioGroup
+                    android:id="@+id/rg_opera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x20"
+                    android:layout_toRightOf="@+id/tv_icon"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/x10">
+
+                    <RadioButton
+                        android:id="@+id/mobile"
+                        style="@style/opera_select_style"
+                        android:checked="true"
+                        android:text="移动"
+                        android:textSize="@dimen/x18" />
+
+                    <RadioButton
+                        android:id="@+id/telecom"
+                        style="@style/opera_select_style"
+                        android:text="电信"
+                        android:textSize="@dimen/x18" />
+
+                    <RadioButton
+                        android:id="@+id/unicom"
+                        style="@style/opera_select_style"
+                        android:text="联通"
+                        android:textSize="@dimen/x18" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/communication"
+                android:layout_marginTop="@dimen/x10"
+                android:background="@drawable/open_back_ground"
+                android:gravity="center_vertical"
+                android:padding="@dimen/x5">
+
+                <ImageView
+                    android:id="@+id/iv_city"
+                    android:layout_width="@dimen/x38"
+                    android:layout_height="@dimen/x32"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:src="@mipmap/select_city" />
+
+                <TextView
+                    android:id="@+id/tv_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_toRightOf="@+id/iv_city"
+                    android:text="选择城市："
+                    android:textColor="@color/content_color"
+                    android:textSize="@dimen/x18" />
+
+                <TextView
+                    android:id="@+id/tv_content_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_city"
+                    android:padding="@dimen/x10"
+                    android:text="广州、上海、北京......"
+                    android:textColor="#B1B1B1"
+                    android:textSize="@dimen/x18" />
+
+
+            </RelativeLayout>
+
+ <!--           <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_phone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x200"
+                android:layout_below="@+id/rl_city"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/x25"
+                android:layout_marginRight="@dimen/x25"
+                android:layout_marginTop="@dimen/x25"
+                android:background="@drawable/back_ground_content">
+
+            </android.support.v7.widget.RecyclerView>-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x200"
+        android:layout_below="@+id/rl_city"
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/x15"
+        android:paddingRight="@dimen/x10"
+        android:layout_marginTop="@dimen/x25"
+        android:background="#fff"
+        android:visibility="gone">
+
+    </android.support.v7.widget.RecyclerView>
+
+            <Button
+                android:id="@+id/but_begin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x50"
+                android:layout_below="@+id/rv_phone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x30"
+                android:layout_marginTop="@dimen/x30"
+                android:background="@drawable/begin_button"
+                android:text="☏     生成手机号"
+                android:textColor="#fff"
+                android:textSize="@dimen/x20" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_content2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/but_begin"
+                android:layout_marginTop="@dimen/x30"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/clean_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/x50"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_select_white"
+                    android:padding="@dimen/x12">
+
+                    <ImageView
+                        android:id="@+id/iv_p_1"
+                        android:layout_width="@dimen/x38"
+                        android:layout_height="@dimen/x32"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/import_phone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x2"
+                        android:layout_toRightOf="@+id/iv_p_1"
+                        android:text="导入通讯录"
+                        android:textColor="@color/phone_button"
+                        android:textSize="@dimen/x18" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/open_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/x50"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginRight="@dimen/x30"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_select_white"
+                    android:padding="@dimen/x12">
+
+                    <ImageView
+                        android:id="@+id/iv_p_2"
+                        android:layout_width="@dimen/x38"
+                        android:layout_height="@dimen/x32"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/open_phone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x2"
+                        android:layout_toRightOf="@+id/iv_p_2"
+                        android:text="打开通讯录"
+                        android:textColor="@color/phone_button"
+                        android:textSize="@dimen/x18" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_content1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/ll_content2"
+                android:layout_marginTop="@dimen/x30"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/import_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/x50"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_select_white"
+                    android:padding="@dimen/x12">
+
+                    <ImageView
+                        android:id="@+id/iv_p_3"
+                        android:layout_width="@dimen/x38"
+                        android:layout_height="@dimen/x32"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/clean_phone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x2"
+                        android:layout_toRightOf="@+id/iv_p_3"
+                        android:text="清空电话号码"
+                        android:textColor="@color/phone_button"
+                        android:textSize="@dimen/x18" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/smash_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/x50"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginRight="@dimen/x30"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_select_white"
+                    android:padding="@dimen/x12">
+
+                    <ImageView
+                        android:id="@+id/iv_p_4"
+                        android:layout_width="@dimen/x38"
+                        android:layout_height="@dimen/x32"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/smash_phone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x2"
+                        android:layout_toRightOf="@+id/iv_p_4"
+                        android:text="清空通讯录"
+                        android:textColor="@color/phone_button"
+                        android:textSize="@dimen/x18" />
+                </RelativeLayout>
+            </LinearLayout>
+
+</RelativeLayout>

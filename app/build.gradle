@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '27.0.3'
+
+    defaultConfig {
+        applicationId "vicmob.earn"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 11
+        versionName "1.9"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main() {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //图片Picasso
+    //鸿阳大神OkHttpUtils
+    //Json解析Gson
+    //黄油刀
+    //SlidingMenu侧滑菜单
+    compile project(':library-slidingmenu')
+    compile files('libs/locSDK_6.13.jar')
+    compile files('libs/baidumapapi_util_v4_3_1.jar')
+    compile files('libs/baidumapapi_search_v4_3_1.jar')
+    compile files('libs/baidumapapi_radar_v4_3_1.jar')
+    compile files('libs/baidumapapi_map_for_bikenavi_v4_3_1.jar')
+    compile files('libs/baidumapapi_cloud_v4_3_1.jar')
+    compile files('libs/baidumapapi_bikenavi_v4_3_1.jar')
+    compile files('libs/baidumapapi_base_v4_3_1.jar')
+    //自定义开关
+    //数据库ormlite
+    //拼音
+    compile files('libs/pinyin4j-2.5.0.jar')
+    //城市列表
+    compile project(':citypicker')
+    //模拟定位
+    provided files('lib/XposedBridgeApi-54.jar')
+    //Excel
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.zhy:okhttputils:2.6.2'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.jakewharton:butterknife:8.0.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.7heaven.ioswidget:iosswitch:0.6'
+    compile 'com.j256.ormlite:ormlite-android:5.0'
+    compile 'com.zaaach:citypicker:1.1'
+    compile 'com.hynnet:jxl:2.6.12.1'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    testCompile 'junit:junit:4.12'
+    apt 'com.jakewharton:butterknife-compiler:8.0.1'
+}

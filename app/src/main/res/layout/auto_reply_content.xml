@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_autoreply_content_in"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x80"
+    android:background="#FFF"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/x12">
+    <LinearLayout
+        android:id="@+id/ll_autoreply_keyword"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="@dimen/x60"
+            android:layout_height="match_parent"
+            android:text="关键词:"
+            android:textSize="@dimen/x17"
+            android:gravity="center_vertical"
+            android:textColor="#FF4D4C4C"/>
+        <TextView
+            android:id="@+id/tv_autoreply_keyword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x10"
+            android:text="关键词:"
+            android:textColor="#FF4D4C4C"
+            android:textSize="@dimen/x17" />
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/x32"
+        android:background="#FFB4B4B4" />
+
+    <LinearLayout
+        android:id="@+id/ll_autoreply_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="@dimen/x75"
+            android:layout_height="match_parent"
+            android:text="回复内容:"
+            android:textSize="@dimen/x17"
+            android:gravity="center_vertical"
+            android:textColor="#FF4D4C4C"/>
+        <TextView
+            android:id="@+id/tv_autoreply_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x10"
+            android:text="回复内容:"
+            android:textColor="#FF4D4C4C"
+            android:textSize="@dimen/x17" />
+    </LinearLayout>
+
+</LinearLayout>

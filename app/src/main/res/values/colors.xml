@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="grays">#e1e1e1</color>
+    <color name="gray">#696969</color>
+    <color name="lv_click_color">#77AAAAAA</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="tab_text_unselected">#828990</color>
+
+    <color name="app_main_color">#3F51B5</color>
+    <color name="app_main_color_deep">#303F9F</color>
+
+    <color name="white">#ffffff</color>
+    <color name="open_white">#EAEAEA</color>
+    <color name="black">#000000</color>
+    <color name="gray_light">#f4f4f4</color>
+    <color name="gray_content_in">#f7f7f7</color>
+
+    <color name="progress_end">#87CEEB</color>
+    <color name="progress_start">#87CEEB</color>
+
+    <color name="green">#15de33</color>
+    <color name="orange">#f4c600</color>
+    <color name="yellow_light">#f2eec2</color>
+    <color name="red">#f45a5a</color>
+    <color name="gray_black">#777575</color>
+
+    <color name="pink">#e65050</color>
+    <color name="transparent">#00ffffff</color>
+    <!--聊天文字的颜色-->
+    <color name="font_black_gray">#000</color>
+    <color name="content_color">#99000000</color>
+    <color name="gray_text">#767676</color>
+    <color name="vision_text">#505050</color>
+    <color name="item_text">#797979</color>
+
+    <color name="back_ground">#f0eff4</color>
+    <color name="select_orange">#f2b28b</color>
+    <color name="deep_orange">#F58505</color>
+    <color name="pressed_orange">#d27003</color>
+    <color name="deep_gray">#bfbfbf</color>
+    <color name="purple">#e16bc7</color>
+
+    <color name="bg_gray">#8e8e8e</color>
+    <color name="button_gray">#9E9E9E</color>
+
+
+    <color name="half_transparent_black">#7a000000</color>
+    <color name="titleWhite">#F5F5F5</color>
+
+    <color name="line">#ffd3dde6</color>
+
+    <!-- 描边颜色 -->
+    <color name="borderTop_clo">#f58505</color>
+    <color name="border_clo">#ccc</color>
+    <color name="text_clo">#333</color>
+    <color name="blue">#ADD8E6</color>
+    <color name="main_tab_color">#5DE4DF</color>
+
+    <color name="spots_dialog_color">@android:color/holo_blue_dark</color>
+
+    <!-- 对话框颜色 -->
+    <color name="text_blue">#0076FF</color>
+    <color name="text_black">#333333</color>
+    <color name="text_select_pressed">#1000</color>
+    <color name="text_select_white">#EFEFEF</color>
+    <color name="line_gray">#99cccccc</color>
+    <drawable name="tab_horizontal_item_p">#f58505</drawable>
+    <drawable name="tab_horizontal_item_d">#fefffe</drawable>
+    <color name="tab_select">#F58550</color>
+    <color name="tab_backgroud">#f58505</color>
+
+    <color name="line_gray1">#99f2eded</color>
+
+</resources>

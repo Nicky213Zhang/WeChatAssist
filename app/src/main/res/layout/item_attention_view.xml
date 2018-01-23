@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/attention_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XXX"
+        android:gravity="center|left"
+        android:background="@drawable/colorchange"
+        android:textColor="#fff"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20"
+        android:paddingBottom="@dimen/x5"
+        android:paddingTop="@dimen/x5"
+        android:layout_marginTop="@dimen/x10"        android:textSize="15sp"
+
+        android:layout_marginBottom="@dimen/x5"/>
+    <TextView
+        android:id="@+id/attention_content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/font14"
+        />
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground">
+
+    <RelativeLayout
+        android:id="@+id/rl_title_onestart"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x60"
+        android:layout_centerHorizontal="true"
+        android:background="@color/deep_orange">
+
+        <ImageView
+            android:id="@+id/iv_back_onestart"
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x30"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x5"
+            android:background="@drawable/back_btn"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="一键开始"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x19"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_open_onestart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_title_onestart"
+        android:layout_marginTop="@dimen/x30"
+        android:background="@drawable/open_back_ground"
+        android:padding="@dimen/x15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x10"
+            android:text="一键开始"
+            android:textColor="#FF803F"
+            android:textSize="@dimen/x20"/>
+
+
+        <com.sevenheaven.iosswitch.ShSwitchView
+            android:id="@+id/iv_begin_onestart"
+            android:layout_width="@dimen/x68"
+            android:layout_height="@dimen/x38"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x10"
+            app:tintColor="@color/deep_orange"/>
+
+    </RelativeLayout>
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_remarks_autoresponse"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/rl_open_autoresponse"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_margin="@dimen/x15"-->
+    <!--android:text="备注：自动回复功能需保证微信允许显示通知栏开启"-->
+    <!--android:textColor="#B1B1B1"-->
+    <!--android:textSize="@dimen/x17"/>-->
+    <Button
+        android:id="@+id/btn_begin_onestart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/x50"
+        android:layout_marginLeft="@dimen/x50"
+        android:layout_marginRight="@dimen/x50"
+        android:layout_marginTop="@dimen/x20"
+        android:background="@drawable/begin_button"
+        android:text="开始"
+        android:textColor="#fff"
+        android:textSize="@dimen/x18"/>
+</RelativeLayout>

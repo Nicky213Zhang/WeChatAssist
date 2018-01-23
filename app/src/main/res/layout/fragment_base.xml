@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x55"
+        android:background="@color/deep_orange">
+
+        <ImageView
+            android:id="@+id/menu_back"
+            android:layout_width="@dimen/x35"
+            android:layout_height="@dimen/x35"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x8"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_menu" />
+
+        <ImageView
+            android:id="@+id/title_icon"
+            android:layout_width="@dimen/x90"
+            android:layout_height="@dimen/x45"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/title_icon"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x20"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</LinearLayout>

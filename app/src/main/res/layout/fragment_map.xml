@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.baidu.mapapi.map.TextureMapView
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.baidu.mapapi.map.TextureMapView>
+
+        <ImageButton
+            android:id="@+id/startmockLocation"
+            android:layout_width="@dimen/x136"
+            android:layout_height="@dimen/x52"
+            android:layout_above="@+id/map_mark"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/mapfrg_start_mock_icon"
+            android:visibility="gone"
+        />
+
+        <ImageButton
+            android:id="@+id/stopmockLocation"
+            android:layout_width="@dimen/x136"
+            android:layout_height="@dimen/x52"
+            android:layout_above="@+id/map_mark"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/mapfrg_stop_mock_icon"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/map_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
+            android:src="@mipmap/coordinate"/>
+
+        <RelativeLayout
+            android:id="@+id/detailMsg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x88"
+            android:layout_below="@+id/map_mark"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/x50"
+            android:layout_marginRight="@dimen/x50"
+            android:layout_marginTop="@dimen/x_14"
+            android:background="@drawable/vq"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/detailMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="赚赚已将您的手机当前位置模拟到"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x13"/>
+
+                <TextView
+                    android:id="@+id/detailMessage2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/x16"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x17"/>
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/map_real_location"
+                android:layout_width="@dimen/x50"
+                android:layout_height="@dimen/x50"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/x70"
+                android:layout_marginLeft="@dimen/x4"
+                android:background="@drawable/point_button1"/>
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/map_search_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x15"
+            android:layout_marginRight="@dimen/x128"
+            android:layout_marginTop="@dimen/x64"
+            android:background="@drawable/back_ground_content"
+            android:visibility="gone"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x8"
+            android:layout_marginTop="@dimen/x7"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <vicmob.micropowder.ui.views.EditTextWithDel
+                android:id="@+id/map_keyOrResult"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/x55"
+                android:layout_marginRight="@dimen/x5"
+                android:layout_weight="5"
+                android:background="@drawable/back_ground_content"
+                android:drawableLeft="@mipmap/places_ic_search"
+                android:drawableRight="@drawable/ic_move_del"
+                android:hint="请输入搜索关键字"
+                android:padding="@dimen/x5"
+                android:singleLine="true"
+                android:textColor="#4F4F4F"
+                android:textSize="@dimen/x14"/>
+
+            <Button
+                android:id="@+id/map_search_button"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/x45"
+                android:layout_weight="1"
+                android:background="@drawable/map_button_select"
+                android:text="搜索"
+                android:textColor="@color/map_text_select"
+                android:textSize="@dimen/x15"/>
+
+            <Button
+                android:id="@+id/map_address_button"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/x45"
+                android:layout_marginLeft="@dimen/x5"
+                android:layout_weight="1"
+                android:background="@drawable/map_button_select"
+                android:text="添加"
+                android:textColor="@color/map_text_select"
+                android:textSize="@dimen/x15"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

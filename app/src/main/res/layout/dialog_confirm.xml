@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="@dimen/x270"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_dialog_confirm">
+
+        <TextView
+            android:id="@+id/dialog_confirm_title"
+            android:layout_marginTop="@dimen/x35"
+            android:layout_marginBottom="@dimen/x15"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/x17"
+            android:textColor="@color/text_black" />
+
+        <View
+            android:layout_marginTop="@dimen/x13"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:background="#DFDFDF"/>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x44">
+
+            <TextView
+                android:background="@drawable/dialog_but_selector"
+                android:clickable="true"
+                android:id="@+id/dialog_confirm_cancle"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="取消"
+                android:textSize="@dimen/x17"
+                android:textColor="@color/text_blue"
+                />
+            <View
+                android:layout_width="@dimen/x1"
+                android:layout_height="match_parent"
+                android:background="#DFDFDF"/>
+            <TextView
+                android:background="@drawable/dialog_but_selector2"
+                android:clickable="true"
+                android:id="@+id/dialog_confirm_sure"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="确认"
+                android:textSize="@dimen/x17"
+                android:textColor="@color/text_blue"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

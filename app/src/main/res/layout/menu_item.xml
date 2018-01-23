@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   >
+
+<LinearLayout
+    android:id="@+id/line_top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/x5"
+    android:paddingBottom="@dimen/x5"
+    android:orientation="horizontal">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1">
+    <ImageView
+        android:id="@+id/iv_item_menu"
+        android:layout_width="@dimen/x33"
+        android:layout_height="@dimen/x33"
+        android:layout_gravity="center"
+        android:src="@mipmap/sidebar_01"
+        android:layout_marginLeft="@dimen/x5"/>
+
+    <TextView
+        android:id="@+id/tv_item_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/x12"
+        android:layout_marginTop="@dimen/x12"
+        android:text="白名单"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/x18"/>
+</LinearLayout>
+    <!--<ImageView
+        android:id="@+id/iv_item_arrowhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@mipmap/setting_arrow"
+        android:layout_marginRight="@dimen/x15"/>-->
+
+</LinearLayout>
+    <View style="@style/sidebar"
+        android:layout_below="@+id/line_top"/>
+
+   </RelativeLayout>
+

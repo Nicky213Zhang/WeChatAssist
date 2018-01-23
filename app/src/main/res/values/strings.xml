@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">赚赚</string>
+
+    <string name="app_icon_name">赚赚</string>
+
+    <string name="phoneVicmob">客服电话：\n0510-68561611</string>
+
+    <string name="aboutVicmob">\u3000\u3000无锡微炫客信息技术有限公司是基于微信公众号为广大企业提供开发、运营、培训、
+        推广等一体化解决方案服务的企业服务拓展商。 凭借着丰富的产品功能、全新的产品设计、快速的产品创新、超出用户期待的产品价值，
+        帮助企业实现线上线下互通（O2O)，社会化客户关系管理， 移动商城(Vshop),轻应用（lightapp），全民营销(VSP)等多个层面的业务开发。
+    </string>
+    <string name="test_accessibility">为了程序正常运行请打开此服务</string>
+    <string name="public_number_remark">备注：公众号推广辅助不能与其他服务同时工作。
+        公众号推广是自动向联系人推送公众号名片,请先关注需要推送的公众号,然后方可使用本功能。
+        推送人数不能大于微信好友数。
+    </string>
+    <string name="drift_bottle">备注：漂流瓶内容至少5个字，漂流瓶个数最多20</string>
+    <string name="replynearby">备注：回复内容不要超过50个字</string>
+    <string name="group_friend">备注：群好友自动添加需要将群聊加入通讯录同时不能与其他
+        服务同时工作。将群聊加入通讯录步骤：点击群聊右上角头像，
+        将群聊保存到通讯录开关打开。注意当超过起始群超过群总数时，只会运行最后一个群。
+    </string>
+    <!--版本-->
+    <string name="version_log10">1.9版本</string>
+    <string name="version_log10_1">1/3/2018</string>
+    <string name="version_log10_2">·微信升级，匹配微信6.6.1</string>
+    <string name="version_log9">1.8版本</string>
+    <string name="version_log9_1">12/27/2017</string>
+    <string name="version_log9_2">·微信升级，匹配微信6.6</string>
+    <string name="version_log8">1.7版本</string>
+    <string name="version_log8_1">12/13/2017</string>
+    <string name="version_log8_2">·微信升级，匹配微信id</string>
+    <string name="version_log7">1.6版本</string>
+    <string name="version_log7_1">12/7/2017</string>
+    <string name="version_log7_2">·修正一键养号，与对自定义数据进行修正，公众号的功能调整</string>
+    <string name="version_log6">1.5版本</string>
+    <string name="version_log6_1">11/23/2017</string>
+    <string name="version_log6_2">·匹配微信新版本6.5.22</string>
+    <string name="version_log5">1.4版本</string>
+    <string name="version_log5_1">11/18/2017</string>
+    <string name="version_log5_2">·匹配微信新版本6.5.19，修复详细资料个人签名出现的问题</string>
+    <string name="version_log4">1.3版本</string>
+    <string name="version_log4_1">11/7/2017</string>
+    <string name="version_log4_2">·修复一键开始中途卡顿bug,对附近的人的消息回复进行发送失败也清空处理</string>
+    <string name="version_log3">1.2版本</string>
+    <string name="version_log3_1">10/29/2017</string>
+    <string name="version_log3_2">·添加懒懒控制分配白名单,一键开始,自动换号,一键清粉,一键养号功能；修复已知bug</string>
+    <string name="version_log2">1.1版本</string>
+    <string name="version_log2_1">10/8/2017</string>
+    <string name="version_log2_2">·匹配微信6.5.16版本，修改已知Bug</string>
+    <string name="version_log1">1.0版本</string>
+    <string name="version_log1_1">9/22/2017</string>
+    <string name="version_log1_2">·现推出懒赚手机插卡版,已上线微信与QQ模块。</string>
+    <string name="title_activity_qqmain">QQMainActivity</string>
+
+    <!--QQ注意事项-->
+    <!--QQ功能-->
+    <string name="qq_function">QQ功能</string>
+    <string name="qq_address_manage">地点管理</string>
+    <string name="qq_reset">QQ重置</string>
+    <string name="qq_phone_list">通讯录</string>
+    <string name="qq_add_friend">一键加好友</string>
+    <string name="qq_add_group_friends">一键加群友</string>
+    <string name="qq_send_message">一键发消息</string>
+    <string name="qq_nearby">附近人</string>
+    <!--QQ注意内容-->
+    <string name="qq_attention_content">QQ注意内容</string>
+    <string name="qq_address_manage_content">地点管理</string>
+    <string name="qq_reset_content">QQ重置</string>
+    <string name="qq_phone_list_content">通讯录</string>
+    <string name="qq_add_friend_content">\t\t两者之间有个互相的制约的，当一个添加过多的好友时，另一个操作一会就会出现操作频繁的提示，一般这时候都需要等待一会，再进行操作</string>
+    <string name="qq_add_group_friends_content">\t\t两者之间有个互相的制约的，当一个添加过多的好友时，另一个操作一会就会出现操作频繁的提示，一般这时候都需要等待一会，再进行操作\n起始群不能超过十个</string>
+    <string name="qq_send_message_content">无限制</string>
+    <string name="qq_nearby_content">\t\t打招呼关注的个数是按照QQ附近人等级来区分的，等级越高，打招呼次数关注人数就越多。
+        模拟定位添加的地点一次最好只添加一个地点，多余一个的话会导致第二个以后的地点不能模拟成功</string>
+    <!--微信注意事项-->
+    <!--微信功能-->
+    <string name="wechat_function">微信功能</string>
+    <string name="wechat_address_manage">地点管理</string>
+    <string name="wechat_nearby">附近人</string>
+    <string name="wechat_reset">微信重置</string>
+    <string name="wechat_auto_reply">自动回复</string>
+    <string name="wechat_phone_list">通讯录</string>
+    <string name="wechat_add_friend">一键加好友</string>
+    <string name="wechat_add_group_friend">一键加群友</string>
+    <string name="wechat_public_num">公众号</string>
+    <string name="wechat_drift_bottle">漂流瓶</string>
+    <string name="wechat_circle_friends">朋友圈</string>
+    <string name="wechat_send_message">一键发消息</string>
+    <string name="wechat_whitelist">白名单</string>
+    <!--微信注意内容-->
+    <string name="wechat_attention_content">微信注意内容</string>
+    <string name="wechat_address_manage_content">地点管理</string>
+    <string name="wechat_nearby_content">●在地图中至少添加一个模拟的地点\n●进入附近的人模块添加任意打招呼内容，内容最多输入50个字，向左滑动打招呼内容可点击应用或删除\n●输入添加的人数（上限是80人），建议两次打招呼之间的时间间隔超过1小时</string>
+    <string name="wechat_reset_content">微信重置</string>
+    <string name="wechat_auto_reply_content">根据添加的关键词和回复内容回复好友的消息，前提是微信允许显示通知栏开启。</string>
+    <string name="wechat_phone_list_content">●选择运营商和城市后，每次会随机生成500个号码，可以进行打开、导入与清空通讯录的相关操作\n●过于频繁的导入大量的微信号时，微信会限制生成的微信号</string>
+    <string name="wechat_add_friend_content">●微信端识别通讯录中的号码显示可添加的新的朋友，点击赚赚APP一键加好友，上限为80人</string>
+    <string name="wechat_add_group_friend_content">●请将需要添加好友的群聊保存到通讯录\n●设置起始群（开始添加的群的位置），点击“开始添加”，赚赚即进入微信端添加群聊中的好友</string>
+    <string name="wechat_public_num_content">●必须关注要推送的公众号\n●设置推送的公众号名称，点击“确定”添加，建议一次不超过5个公众号\n●设置推送的人数,默认30人\n●设置从第几个人开始推送,默认从0开始</string>
+    <string name="wechat_drift_bottle_content">●每天累计扔瓶子不能超过20个,默认扔两个漂流瓶\n●设置漂流瓶内容：大于等于5个字</string>
+    <string name="wechat_circle_friends_content">●设置任意评论内容和评论的条数，赚赚进入微信的朋友圈界面开始点赞和评论。如不填写评论内容，将默认只点赞不评论</string>
+    <string name="wechat_send_message_content">●一次性最好不要超过30人次，多了的话，微信会检测到会冻结帐号</string>
+    <string name="wechat_whitelist_content">●添加号码的方法：\n \t\t在本地文件中导入excel表格（账号需放在第二列）；\n \t\t在添加号码框中添加手机号/微信号/QQ号\n●添加白名单的方法：\n \t\t直接点击添加白名单进入微信添加好友；\n \t\t通过先导入通讯录然后一键加好友的方式添加好友\n●白名单过多的操作也会操作频繁，所以推荐一次导入100个（Excel一次上限导入1000）</string>
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/x300"
+        android:layout_height="@dimen/x440"
+        android:background="@drawable/bg_dialog_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x15"
+            android:layout_marginRight="@dimen/x15"
+            android:layout_marginTop="@dimen/x10"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x16"
+                android:layout_marginTop="@dimen/x16"
+                android:text="关键词:"
+                android:textSize="@dimen/x20"
+                android:textColor="@color/bg_gray"
+                />
+
+            <ImageView
+                android:id="@+id/iv_auto_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/x16"
+                android:layout_marginTop="@dimen/x16"
+                android:src="@mipmap/friend" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/x20"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x45"
+            android:layout_marginLeft="@dimen/x31"
+            android:layout_marginRight="@dimen/x31"
+            android:background="@drawable/back_login_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_auto_reply_keyword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x16"
+                android:layout_marginRight="@dimen/x16"
+                android:background="@null"
+
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x31"
+            android:layout_marginRight="@dimen/x31"
+            android:layout_marginTop="@dimen/x20"
+            android:text="回复内容:"
+            android:textColor="@color/bg_gray"
+            android:textSize="@dimen/x20"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x160"
+            android:layout_marginRight="@dimen/x31"
+           android:layout_marginLeft="@dimen/x31"
+            android:layout_marginTop="@dimen/x20"
+            android:background="@drawable/bg_dialog_content_in">
+
+            <EditText
+                android:id="@+id/et_auto_reply_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:layout_margin="@dimen/x16"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_auto_reply_confirem"
+            android:layout_width="@dimen/x240"
+            android:layout_height="@dimen/x50"
+            android:layout_marginTop="@dimen/x20"
+            android:layout_gravity="center"
+            android:background="@drawable/begin_button"
+            android:text="确认内容"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x18" />
+    </LinearLayout>
+</LinearLayout>

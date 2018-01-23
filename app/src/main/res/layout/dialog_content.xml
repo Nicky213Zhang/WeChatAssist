@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/x300"
+        android:layout_height="@dimen/x300"
+        android:background="@drawable/bg_dialog_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/x22"
+            android:text="输入内容"
+            android:textColor="@color/content_color"
+            android:textSize="@dimen/x19"/>
+
+        <ImageView
+            android:id="@+id/iv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x25"
+            android:layout_marginTop="@dimen/x22"
+            android:src="@mipmap/friend"/>
+
+        <RelativeLayout
+            android:layout_width="@dimen/x250"
+            android:layout_height="@dimen/x150"
+            android:layout_alignBottom="@+id/but_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/x65"
+            android:background="@drawable/bg_dialog_content_in">
+
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/x20"
+                android:background="@null"
+                android:textColor="@color/content_color"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/but_content"
+            android:layout_width="@dimen/x260"
+            android:layout_height="@dimen/x42"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/x22"
+            android:background="@drawable/begin_button"
+            android:text="确认内容"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x18"/>
+
+    </RelativeLayout>
+</LinearLayout>

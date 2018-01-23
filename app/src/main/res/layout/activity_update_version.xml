@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@mipmap/aboutvicmob_bg">
+
+    <RelativeLayout
+        android:id="@+id/aboutVicmob1title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x60"
+        android:background="@color/deep_orange">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x30"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x5"
+            android:background="@drawable/back_btn"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="微炫客"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/x19"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/showVersion_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updateManager"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginTop="@dimen/x40"
+        android:text="检查新版本:"
+        android:textSize="@dimen/x18" />
+
+    <Button
+        android:id="@+id/but_local_update"
+        android:layout_width="@dimen/x140"
+        android:layout_height="@dimen/x60"
+        android:layout_below="@+id/showVersion_text"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginTop="@dimen/x15"
+        android:background="@drawable/pressbtn"
+        android:text="本地更新"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x16" />
+
+    <Button
+        android:id="@+id/but_line_update"
+        android:layout_width="@dimen/x140"
+        android:layout_height="@dimen/x60"
+        android:layout_below="@+id/checkVersionBtn"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginTop="@dimen/x20"
+        android:background="@drawable/pressbtn"
+        android:text="浏览器更新"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x16" />
+
+</LinearLayout>

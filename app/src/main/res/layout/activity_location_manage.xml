@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title_login_manage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x60"
+        android:layout_centerHorizontal="true"
+        android:background="@color/deep_orange">
+
+        <ImageView
+            android:id="@+id/iv_back_location_manage"
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x30"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x5"
+            android:background="@drawable/back_btn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="地点管理"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x19"/>
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rlv_location_manage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_all_delete"
+        android:layout_below="@+id/rl_title_login_manage"
+        android:layout_marginBottom="@dimen/x30"
+        android:layout_marginTop="@dimen/x20"
+        android:overScrollMode="never"
+        android:visibility="invisible">
+
+    </android.support.v7.widget.RecyclerView>
+    <RelativeLayout
+        android:id="@+id/rll_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+
+
+
+        <ImageView
+            android:id="@+id/iv_location_manage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/none"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tv_location_manage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_location_manage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/x20"
+            android:text="~~暂无任何地点~~"
+            android:textSize="@dimen/x24"
+            android:visibility="visible"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/accmanager_load"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_all_delete"
+        android:layout_below="@+id/rl_title_login_manage"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/x30"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/accmanagerloading_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/loading_animator"
+            android:paddingBottom="@dimen/x10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/accmanagerloading_img"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/x15"
+            android:paddingLeft="@dimen/x20"
+            android:text="正在获取数据......"
+            android:textSize="@dimen/x16" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_all_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/x45"
+        android:layout_marginLeft="@dimen/x45"
+        android:layout_marginRight="@dimen/x45"
+        android:layout_marginTop="@dimen/x20"
+        android:background="@drawable/begin_button"
+        android:text="一键删除"
+        android:textColor="#fff"
+        android:textSize="@dimen/x18"/>
+</RelativeLayout>

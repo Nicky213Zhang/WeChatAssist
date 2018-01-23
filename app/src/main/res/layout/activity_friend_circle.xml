@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/back_ground">
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x60"
+        android:layout_centerHorizontal="true"
+        android:background="@color/deep_orange">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x30"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x5"
+            android:background="@drawable/back_btn"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="朋友圈"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/x19"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_open"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_title"
+        android:layout_marginTop="@dimen/x20"
+        android:background="@drawable/open_back_ground"
+        android:padding="@dimen/x10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x10"
+            android:text="微信辅助"
+            android:textColor="#FF803F"
+            android:textSize="@dimen/x20"/>
+
+        <com.sevenheaven.iosswitch.ShSwitchView
+            android:id="@+id/iv_begin"
+            android:layout_width="@dimen/x68"
+            android:layout_height="@dimen/x38"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x10"
+            app:tintColor="@color/deep_orange"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x80"
+        android:layout_below="@+id/rl_open"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/x35"
+        android:layout_marginRight="@dimen/x35"
+        android:layout_marginTop="@dimen/x20"
+        android:background="@drawable/back_ground_content">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x30"
+            android:src="@drawable/friend"/>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x5"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:text="| 请设置评论的条数："
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/x18"/>
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_toRightOf="@+id/tv_content"
+            android:inputType="number"
+            android:imeOptions="actionGo"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/x17"
+            android:theme="@style/myEditText"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/but_begin"
+        android:layout_below="@+id/rl_content"
+        android:layout_marginBottom="@dimen/x20"
+        android:layout_marginTop="@dimen/x20"/>
+
+    <Button
+        android:id="@+id/but_begin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/but_edit"
+        android:layout_marginBottom="@dimen/x25"
+        android:layout_marginLeft="@dimen/x45"
+        android:layout_marginRight="@dimen/x45"
+        android:background="@drawable/begin_button"
+        android:text="开始点赞评论"
+        android:textColor="#fff"
+        android:textSize="@dimen/x18"/>
+
+    <Button
+        android:id="@+id/but_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/x25"
+        android:layout_marginLeft="@dimen/x45"
+        android:layout_marginRight="@dimen/x45"
+        android:background="@drawable/begin_button"
+        android:text="添加评论内容"
+        android:textColor="#fff"
+        android:textSize="@dimen/x18"/>
+</RelativeLayout>

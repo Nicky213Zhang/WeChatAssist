@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="vicmob.earn">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+
+    　　
+
+
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 读取手机通讯录 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 写入手机通讯录 -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <!-- 下载权限 -->
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="vicmob.micropowder.config.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 模拟定位 -->
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="模拟位置" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="54" />
+
+        <activity android:name="vicmob.micropowder.ui.activity.WelcomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="vicmob.micropowder.ui.activity.SplashActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="vicmob.micropowder.ui.activity.MainActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name="vicmob.micropowder.ui.activity.ConnectionUsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="vicmob.micropowder.ui.activity.OneStartActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="vicmob.micropowder.ui.activity.OneKeyActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="vicmob.micropowder.ui.activity.AboutVersionActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="vicmob.micropowder.ui.activity.AboutVicmobActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="vicmob.micropowder.ui.activity.UpdateVersionActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="vicmob.micropowder.ui.activity.LocationManageActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="vicmob.micropowder.ui.activity.GreetingActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 账号管理 -->
+        <activity android:name="vicmob.micropowder.ui.activity.AccountManageActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="vicmob.micropowder.ui.activity.LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="vicmob.micropowder.ui.activity.NearbyPeopleActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name="vicmob.micropowder.ui.activity.VoluntarilyReplyActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 通讯录 -->
+        <activity
+            android:name="vicmob.micropowder.ui.activity.PhoneActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="vicmob.micropowder.ui.activity.AddFriendActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="vicmob.micropowder.ui.activity.AddGroupFriendActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="vicmob.micropowder.ui.activity.PublicNumberActivity"
+                  android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="vicmob.micropowder.ui.activity.DriftBottleActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="vicmob.micropowder.ui.activity.FriendCircleActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity android:name="vicmob.micropowder.ui.activity.WhiteListActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity android:name="vicmob.micropowder.ui.activity.AKeySendMessageActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="vicmob.micropowder.ui.activity.QQAddFriendsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.zaaach.citypicker.CityPickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CityPicker.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+        <!-- 百度地图 yY4r7jj32xmnxl5UgIyhzIYzZK3WagI9SDK -->
+        <!-- 百度地图 vYXLqfXw43jfcP5ajTysZ3y98UmLg6Bl -->
+        <!-- 百度地图 T88EUGFjXTmzEasDxGF2Ah1gOXzGHtma 朱 -->
+        <!-- gIgFhLnOs3smXGkE5s2g3MgMR29BmoB樊 -->
+        <!--明 uQBqowxnAmCh6ADg50YjYtKlTylA2oql-->
+        <!-- 百度地图 T88EUGFjXTmzEasDxGF2Ah1gOXzGHtma -->
+        <!-- 7gIgFhLnOs3smXGkE5s2g3MgMR29BmoB樊 -->
+        <!-- 百度地图 ICwatEmqEIyX1OvGu1bE2rDKmnSxGkPW 朱2 -->
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="7gIgFhLnOs3smXGkE5s2g3MgMR29BmoB" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"/>
+
+        <!-- 辅助服务 -->
+        <service
+            android:name="vicmob.micropowder.service.EarnAccessibilityService"
+            android:description="@string/test_accessibility"
+            android:label="微信辅助"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/wx_accessibility"/>
+        </service>
+        <!-- 辅助服务 -->
+        <service
+            android:name="vicmob.micropowder.service.QQAccessibilityService"
+            android:description="@string/test_accessibility"
+            android:label="QQ辅助"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/qq_accessibility"/>
+        </service>
+        <service
+            android:name="vicmob.micropowder.service.AutoReplyService"
+            android:label="自动回复"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/wx_accessibility"/>
+        </service>
+        <service
+            android:name="vicmob.micropowder.service.OnekeyService"
+            android:label="一键养号"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/wx_accessibility"/>
+        </service>
+        <!-- 城市列表 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="444d64ea08ce5f8c24b716cb88376285"/>
+
+        <provider
+            android:name="vicmob.micropowder.hook.AppInfoProvider"
+            android:authorities="vicmob.micropowder.hook.AppInfoProvider"
+            android:exported="true"/>
+
+        <activity android:name="vicmob.micropowder.ui.activity.QQAKeySendMessageActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="vicmob.micropowder.ui.activity.QQNearbyPeopleActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="vicmob.micropowder.ui.activity.QQFriendStreamActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity android:name="vicmob.micropowder.ui.activity.QQUserAttentionActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="vicmob.micropowder.ui.activity.DeleteDeadFriendActivity"
+            android:screenOrientation="portrait"/>
+
+
+
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="59c4b05707fe651977000051"/>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="ZhuanZhuan"/>
+
+        <activity android:name="vicmob.micropowder.ui.activity.AutoSwitchNumberActivity"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

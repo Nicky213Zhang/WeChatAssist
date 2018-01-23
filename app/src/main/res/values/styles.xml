@@ -1,0 +1,210 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/deep_orange</item>
+        <item name="colorPrimaryDark">@color/deep_orange</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="textAppearanceSmallPopupMenu">@style/MyTextAppearance</item>
+        <item name="textAppearanceLargePopupMenu">@style/MyTextAppearance</item>
+    </style>
+
+    <!-- 侧边栏线 -->
+    <style name="sidebar">
+        <item name="android:layout_marginLeft">@dimen/x8</item>
+        <item name="android:layout_marginRight">@dimen/x8</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2px</item>
+        <item name="android:background">@color/grays</item>
+    </style>
+
+    <style name="tab_rb_style">
+        <item name="android:layout_height">@dimen/x33</item>
+        <item name="android:layout_width">@dimen/x35</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <!--<item name="android:layout_marginLeft">80dp</item>-->
+        <!--<item name="android:layout_marginRight">80dp</item>-->
+        <!--<item name="android:textColor">@color/tab_color_seletor</item>-->
+    </style>
+
+    <style name="tab_text_style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/x12</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="MyTextAppearance">
+        <item name="android:textColor">@color/deep_orange</item>
+        <item name="android:textSize">@dimen/x16</item>
+        <item name="android:typeface">serif</item>
+    </style>
+
+    <!-- 最外层样式 -->
+    <style name="wrap_layout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/x8</item>
+        <item name="android:layout_marginRight">@dimen/x8</item>
+        <item name="android:layout_marginTop">@dimen/x8</item>
+        <item name="android:padding">1px</item>
+
+    </style>
+
+    <!-- 共用层样式 -->
+    <style name="base_layout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/x15</item>
+        <item name="android:paddingBottom">@dimen/x15</item>
+        <item name="android:paddingLeft">@dimen/x8</item>
+        <item name="android:paddingRight">@dimen/x12</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <!-- view分割线样式 -->
+    <style name="title_size">
+        <item name="android:textSize">@dimen/x18</item>
+        <item name="android:textColor">@color/text_clo</item>
+    </style>
+
+    <!-- 橙色线 -->
+    <style name="top_line">
+        <item name="android:layout_marginLeft">@dimen/x8</item>
+        <item name="android:layout_marginRight">@dimen/x8</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">3px</item>
+        <item name="android:background">@color/borderTop_clo</item>
+    </style>
+
+    <!-- textview样式 -->
+    <style name="usertext">
+        <item name="android:textSize">@dimen/x18</item>
+        <item name="android:textColor">@color/item_text</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- 文本右边箭头样式 -->
+    <style name="img_arrow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@mipmap/setting_arrow</item>
+    </style>
+
+    <!-- view分割线样式 -->
+    <style name="bg_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/border_clo</item>
+    </style>
+
+    <!-- 上圆角样式 -->
+    <style name="top_layout" parent="base_layout">
+        <item name="android:background">@drawable/top_layout_selector</item>
+    </style>
+
+    <!-- 无圆角样式 -->
+    <style name="mid_layout" parent="base_layout">
+        <item name="android:layout_margin">@dimen/x3</item>
+    </style>
+
+    <!-- 下圆角样式 -->
+    <style name="bottom_layout" parent="base_layout">
+        <item name="android:background">@drawable/bottom_layout_selector</item>
+    </style>
+
+    <!-- 全圆角样式 -->
+    <style name="single_layout" parent="base_layout">
+        <item name="android:background">@drawable/single_layout_selector</item>
+    </style>
+
+    <style name="B4_Font_white">
+        <item name="android:textSize">@dimen/x15</item>
+        <item name="android:textColor">@color/common_text_color_333333_white</item>
+    </style>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/bg_dialog_confirm</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="ContentDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="android:windowBackground">@drawable/bg_dialog_content</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 自定义progressbar样式 -->
+    <style name="mProgress_circle">
+        <item name="android:indeterminateDrawable">@drawable/progress_circle_loading</item>
+        <item name="android:minWidth">@dimen/x16</item>
+        <item name="android:minHeight">@dimen/x16</item>
+        <item name="android:maxWidth">@dimen/x62</item>
+        <item name="android:maxHeight">@dimen/x62</item>
+    </style>
+
+    <!-- 自定义EditText样式 -->
+    <style name="myEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/gray_text</item>
+    </style>
+
+    <!--通讯录运营商样式-->
+    <style name="opera_select_style" >
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/x35</item>
+        <item name="android:layout_marginLeft">@dimen/x20</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/x18</item>
+        <item name="android:background">@drawable/opera_select_bg</item>
+        <item name="android:textColor">@color/opera_text_color</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabMaxWidth">@dimen/x200</item>
+        <item name="tabIndicatorColor">?attr/colorAccent</item>
+        <item name="tabIndicatorHeight">@dimen/x4</item>
+        <item name="tabPaddingStart">@dimen/x12</item>
+        <item name="tabPaddingEnd">@dimen/x12</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
+        <item name="tabSelectedTextColor">?android:textColorPrimary</item>
+    </style>
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/x20</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="textAllCaps">true</item>
+    </style>
+    <style name="font14">
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>

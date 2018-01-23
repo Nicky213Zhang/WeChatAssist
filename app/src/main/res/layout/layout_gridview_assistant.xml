@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x100"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_gv_classify"
+        android:text="附近人"
+        android:textColor="@color/bt_color_selector"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_width="@dimen/x100"
+        android:layout_height="@dimen/x40" />
+    <View
+        android:id="@+id/v_fenge"
+        android:layout_below="@+id/tv_gv_classify"
+        android:background="@drawable/line_color_selector"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"/>
+
+</RelativeLayout>

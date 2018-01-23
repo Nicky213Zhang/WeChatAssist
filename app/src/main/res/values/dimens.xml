@@ -1,0 +1,33 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="font_verybig">20sp</dimen>
+    <dimen name="font_big">18sp</dimen>
+    <dimen name="font_medium">16sp</dimen>
+    <dimen name="font_small">14sp</dimen>
+    <dimen name="font_verysmall">12sp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="head">60dp</dimen>
+    <dimen name="rl_content_agf_hight">180dp</dimen>
+    <dimen name="iv_icon_agf_left">35dp</dimen>
+    <dimen name="et_content_agf_right">35dp</dimen>
+    <dimen name="rl_content_agf_margin">45dp</dimen>
+    <dimen name="but_begin_agf_bottom">45dp</dimen>
+    <dimen name="botton">60dp</dimen>
+    <dimen name="rl_content_hight">180dp</dimen>
+    <dimen name="rv_content_top">30dp</dimen>
+    <dimen name="rv_content_bottom">30dp</dimen>
+    <dimen name="l_layout_margin_eft">30dp</dimen>
+    <dimen name="rg_opera_right">35dp</dimen>
+    <dimen name="iv_icon_width">38dp</dimen>
+    <dimen name="iv_icon_height">32dp</dimen>
+    <dimen name="font16">16sp</dimen>
+    <dimen name="iv_phone_icon_left">15dp</dimen>
+    <dimen name="qq_iv_icon_addfriends_left">35dp</dimen>
+    <dimen name="qq_et_content_addfriends_right">35dp</dimen>
+    <dimen name="qq_iv_begin_addfriends_width">68dp</dimen>
+    <dimen name="qq_iv_begin_addfriends_height">38dp</dimen>
+    <dimen name="qq_iv_back_width">30dp</dimen>
+    <dimen name="qq_iv_back_height">30dp</dimen>
+</resources>

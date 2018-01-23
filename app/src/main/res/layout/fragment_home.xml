@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="#F0EFF4"
+              android:orientation="vertical">
+
+    <GridView
+        android:id="@+id/gv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/x5"
+        android:numColumns="3"
+        android:overScrollMode="never"
+        android:paddingLeft="@dimen/x18"
+        android:paddingRight="@dimen/x18"
+        android:paddingTop="@dimen/x18"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/x18">
+    </GridView>
+
+</LinearLayout>

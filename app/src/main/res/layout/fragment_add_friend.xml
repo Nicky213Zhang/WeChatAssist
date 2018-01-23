@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/back_ground">
+
+    <RelativeLayout
+        android:id="@+id/qq_rl_title_add_friends"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x60"
+        android:layout_centerHorizontal="true"
+        android:background="@color/deep_orange">
+
+        <ImageView
+            android:id="@+id/qq_iv_back_add_friends"
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x30"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x5"
+            android:background="@drawable/back_btn"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="一键加好友"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/x17"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/qq_rl_open_addfriends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x27"
+        android:background="@drawable/open_back_ground"
+        android:layout_below="@+id/qq_rl_title_add_friends"
+        android:padding="@dimen/x15"
+       >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x10"
+            android:text="QQ辅助"
+            android:textColor="#FF803F"
+            android:textSize="@dimen/x20"/>
+
+
+        <com.sevenheaven.iosswitch.ShSwitchView
+            android:id="@+id/qq_iv_begin_addfriends"
+            android:layout_width="@dimen/x68"
+            android:layout_height="@dimen/x38"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x10"
+            app:tintColor="@color/deep_orange"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/qq_tv_remarks_addfriends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qq_rl_open_addfriends"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/x20"
+        android:text="备注：一键加好友不能与其他服务同时工作,每次添加上限30人"
+        android:textColor="#B1B1B1"
+        android:textSize="@dimen/x16"/>
+    <RelativeLayout
+        android:id="@+id/qq_rl_content_addfriends"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x180"
+        android:layout_below="@id/qq_tv_remarks_addfriends"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/x45"
+
+        android:layout_marginTop="@dimen/x50"
+        android:background="@drawable/back_ground_content">
+
+        <ImageView
+            android:id="@+id/qq_iv_icon_addfriends"
+            android:layout_width="@dimen/x16"
+            android:layout_height="@dimen/x16"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x35"
+            android:src="@drawable/friend"/>
+
+        <TextView
+            android:id="@+id/qq_tv_content_addfriends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x5"
+            android:layout_toRightOf="@+id/qq_iv_icon_addfriends"
+            android:text="| 设置添加的人数："
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/x18"/>
+
+        <EditText
+            android:id="@+id/qq_et_content_addfriends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/qq_tv_content_addfriends"
+            android:inputType="number"
+            android:imeOptions="actionGo"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/x16"
+            android:theme="@style/myEditText"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/qq_but_begin_addfriends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/x50"
+        android:layout_marginLeft="@dimen/x45"
+        android:layout_marginRight="@dimen/x45"
+        android:text="开始添加"
+        android:textColor="#fff"
+        android:textSize="@dimen/x18"
+        android:background="@drawable/begin_button"
+        />
+
+</RelativeLayout>

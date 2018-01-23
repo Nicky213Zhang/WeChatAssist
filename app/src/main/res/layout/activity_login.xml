@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title_account"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x60"
+        android:layout_centerHorizontal="true"
+        android:background="@color/deep_orange">
+
+        <ImageView
+            android:id="@+id/iv_back_account"
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x30"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x5"
+            android:background="@drawable/back_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="账号管理"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x18" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/account_head"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/x100"
+            android:src="@drawable/round"
+            android:layout_centerHorizontal="true"
+            android:layout_alignTop="@+id/imageView" />
+
+        <ImageView
+            android:layout_width="@dimen/x90"
+            android:layout_height="@dimen/x90"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/x100"
+            android:src="@drawable/account3"
+            android:id="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/login_account_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/account_head"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/x10"
+            android:text="登录账号管理"
+            android:textColor="@color/deep_orange"
+            android:textSize="@dimen/x24" />
+
+
+
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginRight="@dimen/x40"
+            android:layout_below="@id/login_account_tv"
+            android:layout_marginTop="@dimen/x20"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x50"
+                android:layout_marginRight="@dimen/x50"
+                android:background="@drawable/back_login_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/x40"
+                    android:layout_height="@dimen/x40"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:background="@drawable/friend" />
+
+                <TextView
+                    android:layout_width="@dimen/x2"
+                    android:layout_height="@dimen/x30"
+                    android:background="@color/bg_gray" />
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x40"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:layout_marginRight="@dimen/x15"
+                    android:background="@null"
+                    android:hint="账号"
+                    android:inputType="text"
+                    android:maxLength="20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x50"
+                android:layout_marginRight="@dimen/x50"
+                android:layout_marginTop="@dimen/x25"
+                android:background="@drawable/back_login_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/x40"
+                    android:layout_height="@dimen/x40"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:background="@drawable/lock" />
+
+                <TextView
+                    android:layout_width="@dimen/x2"
+                    android:layout_height="@dimen/x30"
+                    android:background="@color/bg_gray" />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x40"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@null"
+                    android:imeOptions="actionGo"
+                    android:hint="密码"
+                    android:inputType="textPassword"
+                    android:maxLength="20" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_add_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x50"
+                android:layout_marginRight="@dimen/x50"
+                android:layout_marginTop="@dimen/x20"
+                android:background="@drawable/begin_button"
+                android:text="添加账号"
+                android:textColor="#fff"
+                android:textSize="@dimen/x18" />
+
+            <Button
+                android:id="@+id/btn_manage_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x50"
+                android:layout_marginRight="@dimen/x50"
+                android:layout_marginTop="@dimen/x20"
+                android:background="@drawable/edit_button"
+                android:text="管理账号"
+                android:textColor="#fff"
+                android:textSize="@dimen/x18" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
